@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>ABIT EC Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.vertical_menu_bar{
+	position:absolute;
+	background-color:#30333d;
+	height:100%;
+	width:35%;
+	text-decoration:none;
+	font-size:17px;
+	top:0px;
+	left:0px;
+	z-index:1;
+}
+.clgName{
+	font-size:60px;
+	color:#b3b3b3;
+	top:30px;
+	left:170px;
+	position:absolute;
+}
+.tag{
+	font-size:30px;
+	color:#b3b3b3;
+	left:65px;
+	top:150px;
+	position:absolute;
+}
+.body_bar{
+	background-color:white;
+	height:798px;
+	width:90%;
+	position:absolute;
+	top:0px;
+	left:35%;
+}
+.login_div{
+	height:395px;
+	width:30%;
+	color:#808080;
+}
+.icon {
+  padding:11.5px 12px;
+  color: white;
+  font-size:22px;
+  min-width:50px;
+  text-align: center;
+}
+body{
+	font-family:arial;
+}
+input[type=text], input[type=password]{
+  background-color: #f0f0f0;
+  width:58%;
+  padding:0px 10px;
+  height:45px;
+}
+input[type=text]:hover {
+  opacity: 0.8;
+}
+input[type=Submit] {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 54%;
+}
+.custom-select {
+  background-color: #f0f0f0;
+  min-width:58%;
+  padding:0px 10px;
+  height:45px;
+  display: inline-block;
+}
+
+</style>
+
+<body>
+
+	<div class="vertical_menu_bar">
+		<p class="clgName"><strong>ABIT</strong></p>
+		<p class="tag">Online Examination Corner</p>
+		<img src="pics/picture.png" width="600" height="600" style="position:absolute;top:195px;left:-50px">
+	</div>
+	
+	<div class="body_bar">
+
+		<div class="login_div" style="position:absolute;top:150px;left:270px;border:2px solid #5a6bbc;border-radius:5px">
+			<form action="" method="post" id="userLogin">
+
+				<p style="left:60px;top:20px;position:absolute"><b>I am a</b><p>
+				<i style="left:55px;top:60px;position:absolute;background-color:#5a6bbc" class="fa fa-user icon"></i>
+				<select class="custom-select" style="left:105px;top:60px;position:absolute;width:80px;border: 1px solid #5a6bbc" id="user" name="user" onchange="changeAction()" required>
+					<option value="">--select--</option>
+					<option value="student">Student</option>
+				    <option value="teacher">Teacher</option>
+				    <option value="extteacher">External Teacher</option>
+				    <option value="controller">Controller</option>
+				</select>
+				
+				<p style="left:60px;top:105px;position:absolute"><b>User Id</b><p>
+				<i style="left:55px;top:145px;position:absolute;background-color:#5a6bbc" class="fa fa-id-card icon"></i>
+				<input style="left:105px;top:145px;position:absolute;border:1px solid #5a6bbc" type="text" name="userId" required>  
+				
+				<p style="left:60px;top:190px;position:absolute"><b>Password</b><p>
+				<i style="left:55px;top:230px;position:absolute;background-color:#5a6bbc" class="fa fa-lock icon"></i>
+				<input style="left:105px;top:230px;position:absolute;border: 1px solid #5a6bbc" type="password" name="password" required>
+				
+				<input style="left:55px;top:300px;position:absolute;background-color:#5a6bbc" type="submit" value="Login">
+			</form>
+			<a id="userRegister" href=""><i style="left:270px;top:300px;position:absolute;background-color:#5a6bbc;padding:10px 12px;min-width:60px;" class="fa fa-user-plus icon"></i></a>
+		</div>
+		
+
+	</div>
+	
+</body>
+<script>
+function changeAction(){
+	var userType = document.getElementById('user').value;
+	if(userType.localeCompare("student") == 0){
+		document.getElementById('userLogin').setAttribute('action', "StudentLogin");
+		document.getElementById('userRegister').setAttribute('href', "StudentRegister.html");
+	}else if(userType.localeCompare("controller") == 0){
+		document.getElementById('userLogin').setAttribute('action', "ControllerLogin");
+		document.getElementById('userRegister').setAttribute('href', "ControllerRegister.html");
+	}if(userType.localeCompare("teacher") == 0){
+		document.getElementById('userLogin').setAttribute('action', "TeacherLogin");
+		document.getElementById('userRegister').setAttribute('href', "TeacherRegister.html");
+	}else if(userType.localeCompare("extteacher") == 0){
+		document.getElementById('userLogin').setAttribute('action', "ExtTeacherLogin");
+		document.getElementById('userRegister').setAttribute('href', "ExtTeacherRegister.jsp");
+	}
+}
+</script>
+</html>
