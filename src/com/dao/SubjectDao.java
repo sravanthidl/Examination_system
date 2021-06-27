@@ -91,6 +91,16 @@ public List<String> getAllSubjectNamesByYearAndBranch(int year, String branch){
 		}
 		return subjectNames;	
 	}
+	
+	public List<Subject> getSubjectsByYear(int year){
+		List<Object> yearSubjectObjects = HibernateTemplate.getSubjectsByYear(year, "Theory");
+		List<Subject> yearSubjects = new ArrayList<>();
+		for(Object yearSubjectObject : yearSubjectObjects) {
+			yearSubjects.add((Subject)yearSubjectObject);
+		}
+		return yearSubjects;
+	}
+	
 	public List<Subject> getAllSubjects(){
 		List<Object> subjectObjects = HibernateTemplate.getAllObjects("Subject");
 		List<Subject> subjects = new ArrayList<>();

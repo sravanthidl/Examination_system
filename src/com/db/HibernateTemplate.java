@@ -337,6 +337,13 @@ public class HibernateTemplate {
 		query.setString("subjectCategory", subjectCategory);
 		return query.list();
 	}
+	public static List<Object> getSubjectsByYear(int year, String subjectCategory){
+		String queryString = "from Subject where year = :year and subjectCategory = :subjectCategory";
+		Query query = sessionFactory.openSession().createQuery(queryString);
+		query.setInteger("year", year);
+		query.setString("subjectCategory", subjectCategory);
+		return query.list();
+	}
 	public static List<Object> getSubjects(int year, String branch){
 		String queryString = "from Subject where year = :year and branch = :branch";
 		Query query = sessionFactory.openSession().createQuery(queryString);

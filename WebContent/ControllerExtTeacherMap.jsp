@@ -247,7 +247,7 @@ body{font-family:arial;}
 							List<ExtTeacher> extTeachers = extTeacherDao.getExtTeacherWithSubjectCode(subjectCode);
 							for(ExtTeacher extTeacher : extTeachers){
 							%>
-							<option value="<%=extTeacher.getExtTeacherId()%>"><%=extTeacher.getExtTeacherId()%></option>
+							<option value="<%=extTeacher.getExtTeacherId()%>" <%if(extTeacher.getYBSId() != null){%> disabled <%}%>><%=extTeacher.getExtTeacherId()%></option>
 							   <%}%>
 							</select>
 						</td>

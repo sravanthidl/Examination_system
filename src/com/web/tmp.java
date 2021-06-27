@@ -14,9 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 
-//controller sub register incorrect format alert
 //external teacher already mapped disable
-//stop sem eval after expire
 
 @WebServlet("/tmp")
 public class tmp extends HttpServlet {

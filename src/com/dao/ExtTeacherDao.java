@@ -63,11 +63,12 @@ public class ExtTeacherDao {
 	public void deleteExtTeacher(int year) {
 		SubjectDao subjectDao = new SubjectDao();
 		List<ExtTeacher> extTeachers = getAllExtTeacher();
-		for(ExtTeacher extTeacher : extTeachers) {
-			String YBSId = extTeacher.getYBSId();
-			Subject subject = subjectDao.getSubject(YBSId);
-			if(subject.getYear() == year) {
-				HibernateTemplate.deleteObject(extTeacher);
+		List<Subject> yearSubjects = subjectDao.getSubjectsByYear(year);
+		for(Subject yearSubject: yearSubjects) {
+			for(ExtTeacher extTeacher : extTeachers) {
+				if(yearSubject.getYBSId().equals(extTeacher.getYBSId())) {
+					HibernateTemplate.deleteObject(extTeacher);
+				}
 			}
 		}
 	}
