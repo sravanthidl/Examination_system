@@ -4,10 +4,10 @@ package com.dao;
 public class Today {
 
 	public String getToday() {
-		return "2021-08-30";
+		return "2021-08-22";
 	}
 	
 	public String getTime() {
-		return "10:00";
+		return "09:15";
 	}
 }

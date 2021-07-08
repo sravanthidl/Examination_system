@@ -345,7 +345,7 @@ public class HibernateTemplate {
 		return query.list();
 	}
 	public static List<Object> getSubjects(int year, String branch){
-		String queryString = "from Subject where year = :year and branch = :branch";
+		String queryString = "from Subject where year = :year and branch = :branch order by subjectCategory desc";
 		Query query = sessionFactory.openSession().createQuery(queryString);
 		query.setInteger("year", year);
 		query.setString("branch", branch);

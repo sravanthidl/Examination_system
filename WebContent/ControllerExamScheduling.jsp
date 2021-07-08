@@ -210,7 +210,7 @@ input[type=text]{text-align: center;}
 						<td><input type="text" style="border:none;color:#585858;width:100px" name="<%=subjectName%>FromTime" placeholder="<%=descriptive.getExamOpenTime()%>" onfocus="(this.type='time')" onblur="(this.type='text')" required></td>
 						<td><input type="text" style="border:none;color:#585858;width:100px" name="<%=subjectName%>ToTime" placeholder="<%=descriptive.getExamCloseTime()%>" onfocus="(this.type='time')" onblur="(this.type='text')" required></td>
 						<%}else{%>
-						<td><input type="date" name="<%=subjectName%>Date" style="width:135px" onkeydown="return false" required></td>
+						<td><input type="date" name="<%=subjectName%>Date" style="width:135px" required></td>
 						<td><input  type="time" name="<%=subjectName%>FromTime" required></td>
 						<td><input type="time" name="<%=subjectName%>ToTime" required></td>
 						<%}%>

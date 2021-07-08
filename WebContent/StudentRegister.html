@@ -75,7 +75,6 @@ input[type=Submit] {
 				<input style="left:225px;top:350px;position:absolute" size="25" type="text" name="batch" required>
 				<p style="left:75px;top:390px;position:absolute">Branch<p>
 				<select style="left:225px;top:400px;position:absolute;width:212px;height:28px" name="branch" required>
-				    <option value="BS">Basic Science</option>
 				    <option value="CE">CE</option>
 				    <option value="CSE">CSE</option>
 				    <option value="ECE">ECE</option>
@@ -95,7 +94,8 @@ input[type=Submit] {
 </body>
 
 <script>
-function validateForm(){
+
+function validateForm(){	
 	var passkey = document.forms["thisForm"]["passkey"].value;
 	var name = document.forms["thisForm"]["name"].value;
 	var studentId = document.forms["thisForm"]["studentId"].value;

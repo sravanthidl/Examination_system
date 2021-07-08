@@ -242,7 +242,7 @@ body{font-family:arial;}
         %>
         <td><input class="button" type="submit" name="examType" value="start"></td>
         <%}else{ %>
-        <td><input class="button" type="submit" name="examType" value="submitted" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="submitted"></td>
         &nbsp;&nbsp;
         <td><%out.println(sam0.getQuiz1Marks()); %></td>
         <%}
@@ -258,10 +258,10 @@ body{font-family:arial;}
         <%}
         }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} %>
        </form>
       </tr>
@@ -276,7 +276,7 @@ body{font-family:arial;}
         %>
         <td><input class="button" type="submit" name="examType" value="start"></td>
         <%}else{ %>
-        <td><input class="button" type="submit" name="examType" value="submitted" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="submitted"></td>
         &nbsp;&nbsp;
         <td><%out.println(sam0.getAsgn1Marks()); %></td>
        <%}
@@ -292,10 +292,10 @@ body{font-family:arial;}
         <%}
         }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} %>
        </form>
       </tr>
@@ -310,7 +310,7 @@ body{font-family:arial;}
         %>
         <td><input class="button" type="submit" name="examType" value="start"></td>
         <%}else{ %>
-        <td><input class="button" type="submit" name="examType" value="submitted" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="submitted"></td>
         &nbsp;&nbsp;
         <td><%out.println(sam0.getMid1NetMarks()); %></td>
         <%}
@@ -326,10 +326,10 @@ body{font-family:arial;}
         <%}
         }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} %>
        </form>
       </tr>
@@ -349,7 +349,7 @@ body{font-family:arial;}
         %>
         <td><input class="button" type="submit" name="examType" value="start"></td>
         <%}else{ %>
-        <td><input class="button" type="submit" name="examType" value="submitted" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="submitted"></td>
         &nbsp;&nbsp;
         <td><%out.println(sam0.getQuiz2Marks()); %></td>
         <%}
@@ -365,10 +365,10 @@ body{font-family:arial;}
         <%}
         }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} %>
        </form>
       </tr>
@@ -383,7 +383,7 @@ body{font-family:arial;}
         %>
         <td><input class="button" type="submit" name="examType" value="start"></td>
         <%}else{ %>
-        <td><input class="button" type="submit" name="examType" value="submitted" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="submitted"></td>
         &nbsp;&nbsp;
         <td><%out.println(sam0.getAsgn2Marks()); %></td>
         <%}
@@ -399,10 +399,10 @@ body{font-family:arial;}
         <%}
         }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} %>
        <form>
       </tr>
@@ -417,7 +417,7 @@ body{font-family:arial;}
         %>
         <td><input class="button" type="submit" name="examType" value="start"></td>
         <%}else{ %>
-        <td><input class="button" type="submit" name="examType" value="submitted" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="submitted"></td>
         &nbsp;&nbsp;
         <td><%out.println(sam0.getMid2NetMarks()); %></td>
         <%}
@@ -433,10 +433,10 @@ body{font-family:arial;}
         <%}
         }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} %>
        </form>
       </tr>
@@ -452,7 +452,7 @@ body{font-family:arial;}
         %>
         <td><input class="button" type="submit" name="examType" value="start"></td>
         <%}else{ %>
-        <td><input class="button" type="submit" name="examType" value="submitted" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="submitted"></td>
         &nbsp;&nbsp;
         <td><%out.println(sam0.getSemMarks()); %></td>
         <%}
@@ -468,10 +468,10 @@ body{font-family:arial;}
         <%}
         }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} }
         else{%>
-        <td><input class="button" type="submit" name="examType" value="not yet started" disabled></td>
+        <td><input class="button" type="submit" name="examType" value="not yet started"></td>
         <%} %>
        </form>
       </tr>

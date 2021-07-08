@@ -124,7 +124,7 @@ input[type=text]{text-align:center;}
 	%>
 	<%! int leftAttr = 40; %>
 	<%! void initLeftAttr(){ leftAttr = 40; } %>
-	<%! void updateLeftAttr(){ leftAttr += 265; } %>
+	<%! void updateLeftAttr(){ leftAttr += 350; } %>
 	<%	
 	initLeftAttr();	
 	List<Subject> theorySubjects = subjectDao.getSubjects(teacherId, "Theory");
@@ -360,11 +360,11 @@ input[type=text]{text-align:center;}
 							<%if(asgn1 != null && asgn1.getAsgnOpenDate() != null){
 							System.out.println("@:"+asgn1.getAsgnOpenDate());
 							%>
-							<td><input type="text" style="border:none;width:130px" placeholder="<%=asgn1.getAsgnOpenDate()%>" onfocus="(this.type='date')" onblur="(this.type='text')" onkeydown="return false" name="openDate" required></td>
-							<td><input type="text" style="border:none;width:130px" placeholder="<%=asgn1.getAsgnCloseDate()%>" onfocus="(this.type='date')" onblur="(this.type='text')" onkeydown="return false" name="closeDate" required></td>
+							<td><input type="text" style="border:none;width:130px" placeholder="<%=asgn1.getAsgnOpenDate()%>" onfocus="(this.type='date')" onblur="(this.type='text')" name="openDate" required></td>
+							<td><input type="text" style="border:none;width:130px" placeholder="<%=asgn1.getAsgnCloseDate()%>" onfocus="(this.type='date')" onblur="(this.type='text')" name="closeDate" required></td>
 							<%}else{%>
-							<td><input type="date" style="width:135px" onkeydown="return false" name="openDate" required></td>
-							<td><input type="date" style="width:135px" onkeydown="return false" name="closeDate" required></td>
+							<td><input type="date" style="width:135px" name="openDate" required></td>
+							<td><input type="date" style="width:135px" name="closeDate" required></td>
 							<%}%>
 							<td><input type="file" name="file" required></td>
 							<td><input type="submit" value="Upload"> <%if(asgn1 != null && asgn1.getAsgnPaperPath() != null){%> <a target="_blank" href="pics/<%=asgn1.getAsgnPaperPath()%>" style="font-size:15px;position:absolute;top:462px;left:990px">&#x2705</a> <%}%> </td>
@@ -376,11 +376,11 @@ input[type=text]{text-align:center;}
 							<input type="hidden" name="YBSId" value="<%=YBSId%>">
 							<td>Mid 2</td>
 							<%if(asgn2 != null && asgn2.getAsgnOpenDate() != null){%>
-							<td><input type="text" style="border:none;width:130px" placeholder="<%=asgn2.getAsgnOpenDate()%>" onfocus="(this.type='date')" onblur="(this.type='text')" onkeydown="return false" name="openDate" required></td>
-							<td><input type="text" style="border:none;width:130px" placeholder="<%=asgn2.getAsgnCloseDate()%>" onfocus="(this.type='date')" onblur="(this.type='text')" onkeydown="return false" name="closeDate" required></td>
+							<td><input type="text" style="border:none;width:130px" placeholder="<%=asgn2.getAsgnOpenDate()%>" onfocus="(this.type='date')" onblur="(this.type='text')" name="openDate" required></td>
+							<td><input type="text" style="border:none;width:130px" placeholder="<%=asgn2.getAsgnCloseDate()%>" onfocus="(this.type='date')" onblur="(this.type='text')" name="closeDate" required></td>
 							<%}else{%>
-							<td><input type="date" style="width:135px" onkeydown="return false" name="openDate" required></td>
-							<td><input type="date" style="width:135px" onkeydown="return false" name="closeDate" required></td>
+							<td><input type="date" style="width:135px" name="openDate" required></td>
+							<td><input type="date" style="width:135px" name="closeDate" required></td>
 							<%}%>
 							<td><input type="file" name="file" required></td>
 							<td><input type="submit" value="Upload"> <%if(asgn2 != null && asgn2.getAsgnPaperPath() != null){%> <a target="_blank" href="pics/<%=asgn2.getAsgnPaperPath()%>" style="font-size:15px;position:absolute;top:506px;left:990px">&#x2705</a> <%}%> </td>

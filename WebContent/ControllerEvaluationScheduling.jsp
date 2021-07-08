@@ -217,12 +217,12 @@ input[type=text]{ text-align:center; }
 						<input type="hidden" name="examType" value="<%=examType.get(j)%>">
 						<td><%=examTypeDisplay.get(j)%></td>
 						<%if(!openDatePH.equals("NA")){ %>
-						<td><input type="text" style="border:none;color:#585858;width:130px" name="openDate" placeholder="<%=openDatePH%>" onfocus="(this.type='date')" onblur="(this.type='text')" onkeydown="return false" required></td>
-						<td><input type="text" style="border:none;color:#585858;width:130px" name="closeDate" placeholder="<%=closeDatePH%>" onfocus="(this.type='date')" onblur="(this.type='text')" onkeydown="return false" required></td>
+						<td><input type="text" style="border:none;color:#585858;width:130px" name="openDate" placeholder="<%=openDatePH%>" onfocus="(this.type='date')" onblur="(this.type='text')" required></td>
+						<td><input type="text" style="border:none;color:#585858;width:130px" name="closeDate" placeholder="<%=closeDatePH%>" onfocus="(this.type='date')" onblur="(this.type='text')" required></td>
 						<td><input type="Submit" value="Update"></td>
 						<%}else{%>
-						<td><input type="date" style="color:#585858;width:135px" name="openDate" onkeydown="return false" required></td>
-						<td><input type="date" style="color:#585858;width:135px" name="closeDate" onkeydown="return false" required></td>
+						<td><input type="date" style="color:#585858;width:135px" name="openDate" required></td>
+						<td><input type="date" style="color:#585858;width:135px" name="closeDate" required></td>
 						<td><input type="Submit" value="Schedule"></td>
 						<%}%>
 					</form>

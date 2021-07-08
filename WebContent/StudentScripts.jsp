@@ -46,6 +46,7 @@
         String x=null;
         if(examType.equals("mid1")||examType.equals("asgn1")){x="mid1";}
         if(examType.equals("mid2")||examType.equals("asgn2")){x="mid2";}
+        if(examType.equals("sem")) x="sem";
         Descriptive d=dDao.getDescriptive(YBSId, x);
         System.out.println(d);
        if(examType.equals("asgn1")||examType.equals("asgn2")){
@@ -53,7 +54,9 @@
         <iframe src="pics/<%=d.getAsgnPaperPath()%>" name="iframe_a" HEIGHT="70%" WIDTH="100%"></iframe>
 		<%}else if(examType.equals("mid1")||examType.equals("mid2")){%>
 		<iframe src="pics/<%=d.getQPaperPath()%>" name="iframe_a" HEIGHT="70%" WIDTH="100%"></iframe>
-		<%} %>
+		<%}else{%>
+		<iframe src="pics/<%=d.getQPaperPath()%>" name="iframe_a" HEIGHT="70%" WIDTH="100%"></iframe>
+		<%}%>
         <br/><br/>
           <input type="file" class="button" name="file" required><br><br><br><br>
           <input type="hidden" name="YBSId" value="<%=YBSId%>">

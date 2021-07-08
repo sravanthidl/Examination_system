@@ -269,7 +269,7 @@ body{font-family:arial;}
 					<%}}%>
 					<%branchIndex++;}%>	
 				</table>
-				<input style="position:absolute;top:350px;left:200px" type="Submit" value="Register to Subjects">
+				<input style="position:absolute;top:420px;left:200px" type="Submit" value="Register to Subjects">
 			</form>
 		</div>
 		

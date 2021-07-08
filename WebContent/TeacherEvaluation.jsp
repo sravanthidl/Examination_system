@@ -118,7 +118,7 @@ body{font-family:arial;}
 	%>
 	<%! int leftAttr = 40; %>
 	<%! void initLeftAttr(){ leftAttr = 40; } %>
-	<%! void updateLeftAttr(){ leftAttr += 265; } %>
+	<%! void updateLeftAttr(){ leftAttr += 350; } %>
 	<%
 	initLeftAttr();
 	List<Subject> theorySubjects = subjectDao.getSubjects(teacherId, "Theory");

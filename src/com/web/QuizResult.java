@@ -54,7 +54,7 @@ public class QuizResult extends HttpServlet {
 		
 		for(String key:qos.keySet()) {
 			if(qos.get(key).equals(anshm.get(key))) {
-				count++;
+				count+=5;
 			}
 		}
 		session.setAttribute("studentScore",count);

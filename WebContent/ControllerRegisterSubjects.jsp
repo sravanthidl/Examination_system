@@ -122,10 +122,10 @@ body{font-family:arial;}
   margin: auto;
   padding: 30px;
   border: 1px solid #888;
-  height:630px;
+  height:710px;
   width:45%;
   left:500px;
-  top:120px;
+  top:70px;
 }
 .close {
   color: #aaaaaa;
